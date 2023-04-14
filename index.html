@@ -9,25 +9,95 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Happy Webcomics Day!</h1>
-    <h2>What is this?</h2>
-    <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
-      own hands and publishing it for anyone who is interested (often for free).
-      Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
-    <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
-    create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
-    good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
+    <header id="myHeader">
+      <h1>Make Your Own RSS Feed Reader</h1>
+      <h2>(For Webcomics Day)</h2>
+    </header>
+    <section>
+      <h2>What is this?</h2>
+      <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
+        own hands and publishing it for anyone who is interested (often for free).
+        Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
+      <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
+      create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
+      good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
+    </section>
+    <div id="nav-container">
+      <div class="nav-button"><a href="#beginners">But, I Don't Know Anything About Coding!</a></div>
+      <div class="nav-button"><a href="#code">Take Me to the Download</a></div>
+      <div class="nav-button"><a href="#moreinfo">I Want to Know More about What's Under the Hood</a></div>
+    </div>
+    <section>
+      <h3 class="scroll-header" id="beginners">But, I Don't Know Anything About Coding!</h3>
+      <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
+        own hands and publishing it for anyone who is interested (often for free).
+        Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
+      <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
+      create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
+      good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
+      <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
+        own hands and publishing it for anyone who is interested (often for free).
+        Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
+      <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
+      create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
+      good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
+      <h3 class="scroll-header"  id="code">Take Me to the Code!</h3>
+      <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
+        own hands and publishing it for anyone who is interested (often for free).
+        Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
+      <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
+      create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
+      good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
+      <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
+        own hands and publishing it for anyone who is interested (often for free).
+        Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
+      <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
+      create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
+      good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
+      <p>Download Link</p>
+      <h4>What to Edit</h4>
+      <p>With screenshots of code, etc.</p>
+      <h4>Downloading</h4>
+      <p>How to Add to your Browser (2 column based on Mozilla vs. Chrome)</p>
+      <h3 class="scroll-header"  id="moreinfo">I Want to Know More of What's Under the Hood!</h3>
+      <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
+        own hands and publishing it for anyone who is interested (often for free).
+        Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
+      <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
+      create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
+      good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
+      <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
+        own hands and publishing it for anyone who is interested (often for free).
+        Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
+      <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
+      create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
+      good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
+      <p>Thanks to Screentones for putting together Webcomics day!</p>
+    </section>
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      var nav = document.getElementById("nav-container");
+      var sticky = nav.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          nav.classList.add("sticky");
+        } else {
+          nav.classList.remove("sticky");
+        }
+      }
+/*
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
     
-    Three buttons - one says "i don't know anything about coding!" one says "Take me to the download" and one says 
-      "I want to know more!"
-    <h3>Take Me to the Code!</h3>
-    <p>Download Link</p>
-    <h4>What to Edit</h4>
-    <p>With screenshots of code, etc.</p>
-    <h4>Downloading</h4>
-    <p>How to Add to your Browser (2 column based on Mozilla vs. Chrome)</p>
-    <h3>I Want to Know More of What's Under the Hood!</h3>
-    <p>Thanks to Screentones for putting together Webcomics day!</p>
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth',
+            });
+        });
+    });*/
+    </script>
     <!--<script src="" async defer></script>-->
   </body>
 </html>
