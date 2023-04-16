@@ -1,194 +1,193 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
 @font-face {
-    font-family: "Mahogany";
-    src: url("./src/Mahogany.woff") format("woff"),
+	font-family: "Mahogany";
+	src: url("./src/Mahogany.woff") format("woff");
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
-body { 
-    color: #2f2f2f;
-    display: grid;
-    grid-template-areas: 
-      "nav content";
-    grid-template-columns: 25% 75%;
-    height: 100vh;
-    margin: 0;
-    background-color: #f5f3ea;
-    font-family: 'Lexend', sans-serif;
-}  
+body {
+	color: #2f2f2f;
+	display: grid;
+	grid-template-areas: "nav content";
+	grid-template-columns: 25% 75%;
+	height: 100vh;
+	margin: 0;
+	background-color: #f5f3ea;
+	font-family: "Lexend", sans-serif;
+}
 
 nav {
-    align-items: center;
-    grid-area: nav; 
-    background-image: url(./src/images/background.png);
-    background-color: #ff9966;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 1vh;
-    width: 25%;
+	align-items: center;
+	grid-area: nav;
+	background-image: url(./src/images/background.png);
+	background-color: #ff9966;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	gap: 1vh;
+	width: 25%;
 }
 
 a {
-    color: #8b3800;
+	color: #8b3800;
 }
 
 a:hover {
-    color: #f5f3ea;
-    background-color: #8b3800;
+	color: #f5f3ea;
+	background-color: #8b3800;
 }
 
-#header, #subheader {
-    text-align: center;
-    padding: 0 15px;
-    margin: 0;
+#header,
+#subheader {
+	text-align: center;
+	padding: 0 15px;
+	margin: 0;
 }
 
 #header {
-    font-family: Mahogany;
-    font-size: 42px;
-    letter-spacing: 2px;
+	font-family: Mahogany;
+	font-size: 42px;
+	letter-spacing: 2px;
 }
 
 #subheader {
-    font-size: 1.0vw;
+	font-size: 1vw;
 }
 
 .nav-button {
-    align-items: center;
-    border: 1px solid #2f2f2f;
-    border-radius: 25px;
-    box-shadow: 5px 5px;
-    background-color: #f5f3ea;
-    color: #2f2f2f;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    transition: all .2s ease;
-    -webkit-transition: all .2s ease;
-    text-decoration: none;
+	align-items: center;
+	border: 1px solid #2f2f2f;
+	border-radius: 25px;
+	box-shadow: 5px 5px;
+	background-color: #f5f3ea;
+	color: #2f2f2f;
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	text-decoration: none;
 }
-  
+
 .nav-button:hover {
-    background-color: #f5f3ea;
-    box-shadow: 8px 8px;
-    color: #2f2f2f;
-    cursor: pointer;
-    transform: scale(1.05);
+	background-color: #f5f3ea;
+	box-shadow: 8px 8px;
+	color: #2f2f2f;
+	cursor: pointer;
+	transform: scale(1.05);
 }
 
 .nav-button p {
-    color: #2f2f2f;
-    text-align: center;
-    margin: 10px;
+	color: #2f2f2f;
+	text-align: center;
+	margin: 10px;
 }
 
 .section-header {
-    border: 1px solid #2f2f2f;
-    border-radius: 25px;
-    box-shadow: 5px 5px;
-    background-color: #f56e4c;
-    /*background-color: #ff8155;*/
-    scroll-margin-top: 15px;
-    padding: 10px;
-    margin-top: 30px;
+	border: 1px solid #2f2f2f;
+	border-radius: 25px;
+	box-shadow: 5px 5px;
+	background-color: #f56e4c;
+	/*background-color: #ff8155;*/
+	scroll-margin-top: 15px;
+	padding: 10px;
+	margin-top: 30px;
 }
 
 content {
-    grid-area: content;  
-    padding: 0em 2em;
+	grid-area: content;
+	padding: 0em 2em;
 }
 
 p {
-    line-height: 24px;
+	line-height: 24px;
 }
 
 .spacing {
-    margin: 0 1.5em;
+	margin: 0 1.5em;
 }
 
 #intro-section {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 20px;
+	display: flex;
+	flex-direction: row-reverse;
+	gap: 20px;
 }
 
 #about-blurb {
-    background-color: #ff9966;
-    border: 1px solid #2f2f2f;
-    border-radius: 25px;
-    box-shadow: 5px 5px;
-    flex: 0 0 30%;
-    min-width: 150px;
-    margin: 15px auto;
-    padding: 20px;
+	background-color: #ff9966;
+	border: 1px solid #2f2f2f;
+	border-radius: 25px;
+	box-shadow: 5px 5px;
+	flex: 0 0 30%;
+	min-width: 150px;
+	margin: 15px auto;
+	padding: 20px;
 }
 
 @media (max-width: 850px) {
-    .nav-button {
-        width: 80%;
-        max-width: 150px;
-    }
-    #intro-section {
-        flex-direction: column;
-    }
-    #about-blurb {
-        margin-bottom: 0;
-    }
-    #header {
-        font-size: 32px;
-    }
+	.nav-button {
+		width: 80%;
+		max-width: 150px;
+	}
+	#intro-section {
+		flex-direction: column;
+	}
+	#about-blurb {
+		margin-bottom: 0;
+	}
+	#header {
+		font-size: 32px;
+	}
 }
 
-
 @media (max-width: 650px) {
-    body {
-        grid-template-areas: 
-        "nav nav"
-        "content content";
-        grid-template-rows: auto 1fr 70px;  
-        grid-template-columns: 1fr;
-    }
-    nav {
-        align-items: center;
-        height: initial;
-        position: fixed;
-        top: 0;
-        height: 250px;
-        width: 100%;
-        padding: 10px 0px;
-    }
+	body {
+		grid-template-areas:
+			"nav nav"
+			"content content";
+		grid-template-rows: auto 1fr 70px;
+		grid-template-columns: 1fr;
+	}
+	nav {
+		align-items: center;
+		height: initial;
+		position: fixed;
+		top: 0;
+		height: 250px;
+		width: 100%;
+		padding: 10px 0px;
+	}
 
-    content {
-        padding-top: 280px;
-    }
+	content {
+		padding-top: 280px;
+	}
 
-    .section-header {
-        scroll-margin-top: 280px;
-        margin: 0;
-        font-size: 20px;
-    }
+	.section-header {
+		scroll-margin-top: 280px;
+		margin: 0;
+		font-size: 20px;
+	}
 
-    #header {
-        margin: 0;
-    }
-    #subheader {
-        display: none;
-    }
-    .nav-button {
-        height: initial;
-        width: 90%;
-        max-width: none;
-    }
-    .nav-button p {
-        margin: 8px;
-    }
+	#header {
+		margin: 0;
+	}
+	#subheader {
+		display: none;
+	}
+	.nav-button {
+		height: initial;
+		width: 90%;
+		max-width: none;
+	}
+	.nav-button p {
+		margin: 8px;
+	}
 }
