@@ -1,3 +1,10 @@
+<!--Hi! This website (and browser extension) was made by T. Valentine for Webcomic Day 2023
+    both the website and the extension are available on Github:-->
+<!--website: -->
+<!--extension: -->
+
+<!--Special thanks to the Screen Tones podcast for hosting the day, and thank you to Heyfonts 
+    for Mahogany- it looks great on this site. https://heyfonts.gumroad.com/-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +48,7 @@
                     and bad algorithms.</p> 
                 <p>That's where RSS Feeds come in! (If you want to know more, <a href="https://rss.com/blog/how-do-rss-feeds-work/"
                     target="_blank"> RSS.com has a great explanatory article</a>.) A lot of webcomics you follow probably 
-                    have their own RSS feeds already- just look for the <img src="./images/rss-feed-symbol.png" style="height: 15px;"> icon. Using the RSS Feed Link, you can follow 
+                    have their own RSS feeds already- just look for the <img src="./src/images/rss-feed-symbol.png" style="height: 15px;"> icon. Using the RSS Feed Link, you can follow 
                     and be alerted to new pages from your favorite webcomic creators. (Or, if you follow authors, they often 
                     also have RSS feeds built into their blogs and websites.)
                 </p>
@@ -74,19 +81,19 @@
                 <li>
                     <p>Find the file named ‘script.js’ and right click the file, then click ‘Open with’ and select your Text 
                     Editor of choice. All images below show the code as viewed in Notepad. It should look like this:</p>
-                    <img src="./images/notepad1.png" style="width: 350px;">
+                    <img src="./src/images/notepad1.png" style="width: 350px;">
                 </li>
                 <li>
                     <p>Go to your favorite webcomic, find their RSS Feed, and copy the URL in the browser. Once you click on 
                     the link, the page will look like a block of text. That’s okay, that’s the RSS Feed! The code in this 
                     extension takes that big block of code, and turns it into something that’s easier to read.</p>
-                    <img src="./images/rss3.png" style="width: 350px;">
+                    <img src="./src/images/rss3.png" style="width: 350px;">
                 </li>
                 <li>
                     <p>Paste the URL into the list (you can delete the links that are already there). Make sure to put 
                     quotation marks around the link, and to place a comma at the end as well. Like this: 
                     <code style="background-color: white;"> "link", </code></p>
-                    <img src="./images/notepad4.png" style="width: 350px;">
+                    <img src="./src/images/notepad4.png" style="width: 350px;">
                 </li>
                 <li>
                     <p>Click save! You’ve officially customized your own RSS Feed reader!</p>
@@ -172,7 +179,38 @@
                 coding something is intimidating, I still encourage you to check out the steps to editing and setting up the extension, and see what would go into editing the browser extension. There are a lot of great resources for learning to code, and it’s honestly like any other hobby. You don’t have to be “good” to have fun and make stuff for yourself and your friends.</p>
         </div>
         <h2 class="section-header" id="extras">I Want to Know More About the Code!</h2>
-        <div class="sample-text spacing"></div>
+        <div class="spacing">
+            <p>My GitHub readme has some basic information about the extension- if 
+                you’re more code savvy you could edit and publish the extension only 
+                using the readme and comments in the code.</p>
+            <p>Below is some additional information about how the code works, and a 
+                little bit about my thoughts behind certain design choices. If you 
+                disagree or think you could do something better- feel free! I’m 
+                <em> sure </em> there’s a way to make every line of code more efficient 
+                and more elegant. </p>
+            <h3>General Design</h3>
+            <p>I only wanted the most recent update visible in the extension- mainly 
+                because there isn’t a backend so there’s no way for you to ‘delete’ an 
+                RSS update and have that stay deleted every time you open the extension. 
+                Also, I thought only having the most recent update would keep the 
+                extension from getting cluttered if you followed multiple webcomics. 
+            </p>
+            <p>I also chose to populate the information into a table- both of these are 
+                things someone with coding experience could change and mess around with. 
+                Whether changing if the RSS populates into a p element rather than a table, or 
+                loading more than one update per webcomic. Go wild- honestly- and 
+                then show me!</p>
+            <h3>CORS</h3>
+            <p>Ah, CORS. This was the first big hurdle when I was creating the RSS Feed Reader. 
+                (For those who may not know: CORS stands for Cross Origin Resource Sharing, and protects 
+                a website’s assets. This includes an RSS feed. Some sites allow an external RSS Feed 
+                Reader to access the RSS Feed, some don’t. All the webcomic RSS feeds I tried to access 
+                didn’t let me access them. Very irritating. </p>
+            <p>However! After some research, I found <a href="https://corsproxy.io/" target="_blank">corsproxy.io</a> 
+                It fixes and resolves the CORS errors I was seeing, and is very easy to implement in your own work. 
+                Honestly, I’m not 100% sure how it works or who made it- clicking through the site, it appears to 
+                me from a German company. But it works! </p>
+        </div>
     </content>
     <script src="script.js"></script>
 </body>
