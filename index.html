@@ -1,103 +1,160 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Own RSS Feed Reader</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header id="myHeader">
-      <h1>Make Your Own RSS Feed Reader</h1>
-      <h2>(For Webcomics Day)</h2>
-    </header>
-    <section>
-      <h2>What is this?</h2>
-      <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
-        own hands and publishing it for anyone who is interested (often for free).
-        Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
-      <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
-      create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
-      good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
-    </section>
-    <div id="nav-container">
-      <div class="nav-button"><a href="#beginners">But, I Don't Know Anything About Coding!</a></div>
-      <div class="nav-button"><a href="#code">Take Me to the Download</a></div>
-      <div class="nav-button"><a href="#moreinfo">I Want to Know More about What's Under the Hood</a></div>
-    </div>
-    <section>
-      <h3 class="scroll-header" id="beginners">But, I Don't Know Anything About Coding!</h3>
-      <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
-        own hands and publishing it for anyone who is interested (often for free).
-        Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
-      <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
-      create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
-      good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
-      <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
-        own hands and publishing it for anyone who is interested (often for free).
-        Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
-      <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
-      create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
-      good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
-      <h3 class="scroll-header"  id="code">Take Me to the Code!</h3>
-      <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
-        own hands and publishing it for anyone who is interested (often for free).
-        Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
-      <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
-      create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
-      good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
-      <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
-        own hands and publishing it for anyone who is interested (often for free).
-        Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
-      <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
-      create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
-      good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
-      <p>Download Link</p>
-      <h4>What to Edit</h4>
-      <p>With screenshots of code, etc.</p>
-      <h4>Downloading</h4>
-      <p>How to Add to your Browser (2 column based on Mozilla vs. Chrome)</p>
-      <h3 class="scroll-header"  id="moreinfo">I Want to Know More of What's Under the Hood!</h3>
-      <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
-        own hands and publishing it for anyone who is interested (often for free).
-        Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
-      <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
-      create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
-      good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
-      <p>Webcomics (to me) are heavily DIY- artists and writers choosing to take stories into their
-        own hands and publishing it for anyone who is interested (often for free).
-        Say something nice about how an RSS feeds, explain how they're used. Make a comment about social media burying artists.</p>
-      <p>There's a lot of great RSS Feed Reader extensions you can download for your browser, but in the DIY spirit- here is an RSS Feed Reader extension, <em>you</em>
-      create, you edit, and that you can customize to your heart's content. Did you know that browser extensions can be made using
-      good old HTML and CSS? Yeah! <em>You</em> can customize your own RSS Feed Reader! Easily!</p>
-      <p>Thanks to Screentones for putting together Webcomics day!</p>
-    </section>
-    <script>
-      window.onscroll = function() {myFunction()};
-
-      var nav = document.getElementById("nav-container");
-      var sticky = nav.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          nav.classList.add("sticky");
-        } else {
-          nav.classList.remove("sticky");
-        }
-      }
-/*
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-    
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth',
-            });
-        });
-    });*/
-    </script>
-    <!--<script src="" async defer></script>-->
-  </body>
+</head>
+<body>
+    <nav>
+        <div>
+            <h2 id="header">Build Your Own RSS Feed Reader</h2>
+            <p id="subheader">For Webcomic Day!</p>
+        </div>
+        <a href="#intro" class="nav-button"><p>But, I Don't Know Anything About Coding!</p></a>
+        <a href="#code" class="nav-button"><p>Download, Editing, and Installation</p></a>
+        <a href="#extras" class="nav-button"><p>I Want to Know More About the Code!</p></a>
+    </nav>
+        
+    <content>
+        <h2 class="section-header" style="background-color: #ffb944;">What is this?</h2>
+        <div>
+            <p>To me, the artistic and creative spirit that goes into webcomics is just as important as the DIY aspect of 
+                it- lots of people have story ideas and very few people feel they can tell those stories themselves. 
+                (Not that webcomics are easy to make or an effortless endeavor- but like all DIY projects, they reward 
+                those who are willing to try!)
+            </p>
+            <h3>What the humble RSS feed can do for <em>You</em></h3>
+            <p>As social media sites become more fraught, following your favorite creators has become more difficult. 
+                If someone posts a page off schedule, or needs to take a hiatus, that information can be lost among ads 
+                and bad algorithms.</p> 
+            <p>That's where RSS Feeds come in! (If you want to know more, <a href="https://rss.com/blog/how-do-rss-feeds-work/"
+                target="_blank"> RSS.com has a great explanatory article</a>.) A lot of webcomics you follow probably 
+                have their own RSS feeds already- just look for the <img src="./images/rss-feed-symbol.png" style="height: 15px;"> icon. Using the RSS Feed Link, you can follow 
+                and be alerted to new pages from your favorite webcomic creators. (Or, if you follow authors, they often 
+                also have RSS feeds built into their blogs and websites.)
+            </p>
+            <h3>CIY (Code It Yourself)</h3>
+            <p>There’s lots of pre-built browser extensions that allow you to track RSS Feeds- but in the spirit of DIY 
+                and Webcomic Day- here is a RSS Feed Reader Extension you can download and edit and chop up to your heart’s 
+                content! </p>
+            <p>Did you know a browser extension really only uses HTML and CSS (especially after I’ve done all the 
+                JavaScript coding work)? So even someone with very limited coding knowledge can customize their own 
+                extension.
+            </p>
+            <p>You can hop right down to the code to download and starting messing around- <em>or</em> you can read <a href="#intro">
+                the introduction to coding</a> blurb below.</p>
+        </div>
+        <h2 class="section-header" id="code">Your RSS Feed Reader</h2>
+        <div>
+            <h3>Download</h3>
+            <p>You can download the extension here!</p>
+            <h3>Editing and Installation Instructions</h3>
+            <ol>
+                <li>
+                    <p>Find the file named ‘script.js’ and right click the file, then click ‘Open with’ and select your Text 
+                    Editor of choice. All images below show the code as viewed in Notepad. It should look like this:</p>
+                    <img src="./images/notepad1.png" style="width: 350px;">
+                </li>
+                <li>
+                    <p>Go to your favorite webcomic, find their RSS Feed, and copy the URL in the browser. Once you click on 
+                    the link, the page will look like a block of text. That’s okay, that’s the RSS Feed! The code in this 
+                    extension takes that big block of code, and turns it into something that’s easier to read.</p>
+                    <img src="./images/rss3.png" style="width: 350px;">
+                </li>
+                <li>
+                    <p>Paste the URL into the list (you can delete the links that are already there). Make sure to put 
+                    quotation marks around the link, and to place a comma at the end as well. Like this: 
+                    <code style="background-color: white;"> "link", </code></p>
+                    <pre>
+                      </pre>
+                    <img src="./images/notepad4.png" style="width: 350px;">
+                </li>
+                <li>
+                    <p>Click save! You’ve officially customized your own RSS Feed reader!</p>
+                    <ul>
+                        <li>
+                            <p>If you want, you can also edit index.html and style.css to change the colors and formatting 
+                            of the browser extension. I wouldn’t recommend editing background.js- that file handles 
+                            showing you a notification badge when a webcomic has updated. (The color of the badge can 
+                            be changed in style.css)</p>
+                        </li>
+                    </ul>
+                </li>
+                <li><p>Installing your extension has different steps depending on the browser you use. The steps below are 
+                    for Firefox, but you can follow these steps to download it on Chrome </p>
+                    <ul>
+                        <li>
+                            <p>I only tested the extension on Firefox and Chrome, so the extension may not work as intended 
+                            on other browsers. If you use another browser like Safari or Opera, you can google and follow 
+                            steps to add your own extension. Let me know how it works!</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Click on the Menu button and then select ‘Extensions & Themes’ or press CTRL + Shift + A</p>
+                </li>
+                <li>
+                    <p>Click the Gear Icon the the right of ‘Manage Your Extensions’ and click ‘Install Add-on from file…’ from 
+                    the menu</p>
+                </li>
+                <li>Select the WHAT FILE HUH WHAT from the folder- your browser uses the location of the file, so if you move it, 
+                    you’ll need to re-install it. 
+                </li>
+                <li>You’re done! You can pin the extension to your Toolbar, and get notifications whenever a webcomic you 
+                    like updates.
+                </li>
+            </ol>
+            <p>If you want to customize the look of the extension, or later add more RSS Feeds to track, you’ll need to 
+                WHAT so that way the extension on your browser is updated. </p>
+        </div>
+        <h2 class="section-header" id="intro">
+            But, I Don't Know Anything About Coding!
+        </h2>
+        <div>
+            <p>That’s okay! I’ve made the code extremely painless, once you download the files, you’ll only need to take a 
+                couple steps to customize and add the extension to your browser. I’ve written comments in the code so 
+                it’s super clear what you (someone with little coding experience) can edit, and also I’ve written what you 
+                shouldn’t touch. If you break something, you can always redownload the file and start from a working 
+                extension again.
+            </p>
+            <h3>Coding and the Web</h3>
+            <p> The browser extension uses HTML (creates content and structure), CSS (styles the content with colors and 
+                more), and JavaScript (lets the user interact with the content). Coincidentally, these 3 coding languages
+                are also the building blocks of (almost) all websites you use, which means you only need to learn the basics
+                of web development to understand how to edit this RSS Feed Reader (and make your own website, if you want). 
+            </p>
+            <p>There is only 1 specific place you have 
+                to edit the JavaScript, and it’s explained in detail below. The rest of customization can be done solely 
+                with HTML and CSS (and is 100% optional). The place where you need to edit the code is explicitly pointed out, and I go into
+                depth explaining that in the download section too.</p>
+            <p>Your computer probably has a built-in Text Editor (like Notepad on Windows computers), and you can use that 
+                for the most basic customization (adding webcomics you want to follow). If you’re interested in customizing 
+                the extension’s appearance, then I’d recommend downloading a Text Editor specific for coding. I’ve included 
+                some tutorials below that explain the basics of HTML and CSS- the tutorials will also give you advice on which
+                text editor is right for you. (I use VS Code, but that's mainly because I use it for work.)
+            </p>
+            <h4>Basic Web Tutorials</h4>
+            <ul>
+                <li><a href="https://www.htmldog.com/guides/html/beginner/" target="_blank">HTML Dog</a></li>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web" target="_blank">Mozilla
+                    Tutorial</a> (This is the most techincal looking one, so if you're brand new to coding, I'd recommend starting with one of the others.)</li>
+            </ul>
+            <h3>Wait, I'm Stil Confused About RSS Feeds!</h3>
+            <p>RSS stands for Really Simply Syndication (or Rich Site Summary) and has been around since the 1990s. RSS is less popular now than it was in the past, but since it’s an older technology, a lot of websites have an RSS feed built into them automatically. </p>
+            <p>An RSS feed is a simple text file written in a coding language called XML. When you have a website with an RSS Feed, any changes to your website are reflected in the RSS file immediately. An RSS Feed by itself is just code, and can look really intimidating. Even if you’re familiar with code, it still isn’t the easiest thing to read. An RSS Feed Reader takes the code, and turns it into something that’s easier for a user to read.  </p>
+            <p>With social media and email on the rise, RSS Feeds became less popular. When I was in high school, I used an RSS Feed to keep track of when manga I read updated (and when sites I liked to visit, liked Cracked, published new articles). Now, I think most people rely solely on social media and email newsletters to see when their favorite websites update.</p>
+            <p>RSS feeds are unique, because there’s no middle-man. There’s no email server to set up or social media presence to manage for the website owner, and on your end, you won’t find a newsletter in your spam or miss a Tweet because it got “low engagement.” When the website updates, the RSS updates, and your Feed Reader updates. That’s it.</p>
+            <h3>My Soapbox</h3>
+            <p>Maybe this is unrelated, but I truly feel like most technology is actually a lot more accessible than people realize. Even if the thought of 
+                coding something is intimidating, I still encourage you to check out the steps to editing and setting up the extension, and see what would go into editing the browser extension. There are a lot of great resources for learning to code, and it’s honestly like any other hobby. You don’t have to be “good” to have fun and make stuff for yourself and your friends.</p>
+        </div>
+        <h2 class="section-header" id="extras">I Want to Know More About the Code!</h2>
+        <div class="sample-text"></div>
+    </content>
+    <script src="script.js"></script>
+</body>
 </html>
