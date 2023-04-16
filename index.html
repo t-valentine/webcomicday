@@ -125,6 +125,7 @@
 				</p>
 				<h3>Editing and Installation Instructions</h3>
 				<ol>
+					<h4>Making Your First Edit</h4>
 					<li>
 						<p>
 							Find the file named ‘script.js’ and right click the file, then
@@ -157,18 +158,19 @@
 						<p>
 							Click save! You’ve officially customized your own RSS Feed reader!
 						</p>
-						<ul>
-							<li>
-								<p>
-									If you want, you can also edit index.html and style.css to
-									change the colors and formatting of the browser extension. I
-									wouldn’t recommend editing background.js- that file handles
-									showing you a notification badge when a webcomic has updated.
-									(The color of the badge can be changed in style.css)
-								</p>
-							</li>
-						</ul>
 					</li>
+					<li>
+						<p>
+							You need to now "package" your extension- which is a fancy way of
+							saying you need to put some files into a ZIP folder so the browser
+							can read the extension correctly.
+						</p>
+						<p>To do this,</p>
+					</li>
+					<li>
+						<p>Another line about packaging?</p>
+					</li>
+					<h4>Installing Your Extension</h4>
 					<li>
 						<p>
 							Installing your extension has different steps depending on the
@@ -194,6 +196,13 @@
 					</li>
 					<li>
 						<p>
+							Select the WHAT FILE HUH WHAT from the folder- your browser uses
+							the location of the file, so if you move it, you’ll need to
+							re-install it.
+						</p>
+					</li>
+					<li>
+						<p>
 							Click on the Menu button and then select ‘Extensions & Themes’ or
 							press CTRL + Shift + A
 						</p>
@@ -206,22 +215,59 @@
 					</li>
 					<li>
 						<p>
-							Select the WHAT FILE HUH WHAT from the folder- your browser uses
-							the location of the file, so if you move it, you’ll need to
-							re-install it.
-						</p>
-					</li>
-					<li>
-						<p>
 							You’re done! You can pin the extension to your Toolbar, and get
 							notifications whenever a webcomic you like updates.
 						</p>
 					</li>
 				</ol>
+				<div id="you-did-it">
+					<h3 style="text-align: center">It's that easy!</h3>
+					<p style="text-align: center">
+						You know have your very own, customized, RSS Feed Reader.
+					</p>
+				</div>
+				<h3>Updating Your RSS Feed Reader</h3>
 				<p>
-					If you want to customize the look of the extension, or later add more
-					RSS Feeds to track, you’ll need to WHAT so that way the extension on
-					your browser is updated.
+					Well, you've done it! But maybe, you want the extension to be purple.
+					Or maybe you want to add a new podcast to your reader. (Did you know
+					podcasts also have RSS feeds you can track?) Well, open up the code
+					and make those changes! If you want to see the changes you make in
+					real time, you can open index.html in a browser window and view it
+					like a webpage, or you can use browser debug tools to temporarily load
+					the extension.
+				</p>
+				<p>
+					For those who are less code savvy, I've added comments explaining what
+					lines of index.html and style.css you can edit easily, and what
+					they'll do. I wouldn’t recommend editing background.js- that file
+					handles showing you a notification badge when a webcomic has updated.
+					(The color of the badge can be changed in style.css)
+				</p>
+				<h4>Seeing Your Edits</h4>
+				<p>
+					<strong>In Mozilla Firefox,</strong> use
+					<a
+						href="https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/"
+						target="_blank">
+						this tutorial
+					</a>
+					to temporarily add an extension to your browser. Perfect for testing
+					edits and making cosmetic changes.
+				</p>
+				<p>
+					If you're a <strong>Google Chrome</strong> user, you can follow
+					<a
+						href="https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked"
+						target="_blank">
+						this tutorial.
+					</a>
+				</p>
+				<h4>Updating Your Extension</h4>
+				<p>
+					Updating your extension is going to follow the exact steps as the
+					installation instructions above. Once you've made your changes and
+					saved your files, make your ZIP folder (only zipping X, Y, Z) and
+					upload to your browser!
 				</p>
 			</div>
 			<h2 class="section-header" id="intro">

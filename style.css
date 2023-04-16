@@ -132,6 +132,24 @@ p {
 	padding: 20px;
 }
 
+#you-did-it {
+	align-items: center;
+	background-color: #ff9966;
+	border: 1px solid #2f2f2f;
+	border-radius: 25px;
+	box-shadow: 5px 5px;
+	margin: 30px auto;
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	width: 300px;
+}
+
+#you-did-it:hover {
+	background-color: #f56e4c;
+	color: #2f2f2f;
+	transform: scale(1.05);
+}
+
 @media (max-width: 850px) {
 	.nav-button {
 		width: 80%;
