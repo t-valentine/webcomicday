@@ -5,6 +5,7 @@ html {
 }
 
 body { 
+    color: #2f2f2f;
     display: grid;
     grid-template-areas: 
       "nav content";
@@ -31,18 +32,28 @@ nav {
     width: 20%;
 }
 
+a {
+    color: #8b3800;
+}
+
+a:hover {
+    color: #f5f3ea;
+    background-color: #8b3800;
+}
+
 #header, #subheader {
     text-align: center;
     padding: 0 15px;
+    margin: 0;
 }
 
 .nav-button {
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid #2f2f2f;
     border-radius: 25px;
     box-shadow: 5px 5px;
     background-color: #f5f3ea;
-    color: black;
+    color: #2f2f2f;
     width: 150px;
     height: 150px;
     display: flex;
@@ -53,23 +64,25 @@ nav {
 }
   
 .nav-button:hover {
-    /*color: blue; changes shadow color */
+    background-color: #f5f3ea;
     box-shadow: 8px 8px;
+    color: #2f2f2f;
     cursor: pointer;
     transform: scale(1.05);
 }
 
 .nav-button p {
-    color: black;
+    color: #2f2f2f;
     text-align: center;
     margin: 10px;
 }
 
 .section-header {
-    border: 1px solid black;
+    border: 1px solid #2f2f2f;
     border-radius: 25px;
     box-shadow: 5px 5px;
-    background-color: #df5584;
+    background-color: #f56e4c;
+    /*background-color: #ff8155;*/
     scroll-margin-top: 15px;
     padding: 10px;
     margin-top: 30px;
@@ -84,8 +97,25 @@ p {
     line-height: 24px;
 }
 
-content div {
+.spacing {
     margin: 0 1.5em;
+}
+
+#intro-section {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+#about-blurb {
+    background-color: #ff9966;
+    border: 1px solid #2f2f2f;
+    border-radius: 25px;
+    box-shadow: 5px 5px;
+    flex: 0 0 30%;
+    min-width: 150px;
+    margin: 15px auto;
+    padding: 20px;
 }
 
 @media (max-width: 850px) {
@@ -93,7 +123,14 @@ content div {
         width: 80%;
         max-width: 150px;
     }
+    #intro-section {
+        flex-direction: column;
+    }
+    #about-blurb {
+        margin-bottom: 0;
+    }
 }
+
 
 @media (max-width: 650px) {
     body {
@@ -122,6 +159,7 @@ content div {
         margin: 0;
         font-size: 20px;
     }
+
     #header {
         margin: 0;
     }
