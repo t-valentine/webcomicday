@@ -111,6 +111,13 @@ p {
 	line-height: 24px;
 }
 
+.tutorial-images {
+	max-width: 600px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .spacing {
 	margin: 0 1.5em;
 }
@@ -164,6 +171,9 @@ p {
 	#header {
 		font-size: 32px;
 	}
+	.tutorial-images {
+		max-width: 500px;
+	}
 }
 
 @media (max-width: 650px) {
@@ -207,5 +217,8 @@ p {
 	}
 	.nav-button p {
 		margin: 8px;
+	}
+	.tutorial-images {
+		max-width: 350px;
 	}
 }
