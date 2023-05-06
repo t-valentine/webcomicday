@@ -103,9 +103,9 @@
 					extension.
 				</p>
 				<p>
-					You can hop right down to the code to download and starting messing
-					around- <em>or</em> you can read the introduction to coding blurb
-					below.
+					You can hop right down to the code to download and start messing
+					around- <em>or</em> you can read the section below for an introduction
+					to coding.
 				</p>
 			</div>
 			<h2 class="section-header" id="intro">
@@ -114,12 +114,12 @@
 			<div class="spacing">
 				<p>
 					That’s okay! I’ve made the code extremely painless, once you download
-					the files, you’ll only need to take a couple steps to customize and
+					the files, you’ll only need to take a couple of steps to customize and
 					add the extension to your browser. I’ve written comments in the code
 					so it’s super clear what you (someone with little coding experience)
 					can edit, and also I’ve written what you shouldn’t touch. If you break
-					something, you can always redownload the file and start from a working
-					extension again.
+					something, you can always re-download the file and start from a
+					working extension again.
 				</p>
 				<h3>Coding and the Web</h3>
 				<p>
@@ -133,10 +133,10 @@
 				</p>
 				<p>
 					There is only 1 specific place you have to edit the JavaScript, and
-					it’s explained in detail below. The rest of customization can be done
-					solely with HTML and CSS (and is 100% optional). The place where you
-					need to edit the code is explicitly pointed out, and I go into depth
-					explaining that in the download section too.
+					it’s explained in detail below. The rest of the customization can be
+					done solely with HTML and CSS (and is 100% optional). The place where
+					you need to edit the code is explicitly pointed out, and I go into
+					depth explaining that in the download section too.
 				</p>
 				<p>
 					Your computer probably has a built-in Text Editor (like Notepad on
@@ -172,6 +172,80 @@
 						coding, I'd recommend starting with one of the others.)
 					</li>
 				</ul>
+				<h3 id="anatomy">Anatomy of an Extension</h3>
+				<p>
+					Before we start, there’s some basic vocabulary and architecture we
+					should go over. First, let’s look at what you’ll see when the
+					extension is working. Then, we’ll go over the files you’ll see in the
+					ZIP folder, and which ones you should keep an eye on if you want to
+					edit your extension.
+				</p>
+				<p>
+					If you want more detailed information about what each file does, you
+					can click on the ‘README.md’ file and learn more! Or read about it on
+					the Github page (which is linked in the
+					<a href="#code">‘Download’</a> section of this site.)
+				</p>
+				<div class="anatomy-div">
+					<div>
+						<h4 style="margin-top: 0">What the Extension Will Look Like</h4>
+						<img
+							src="./src/images/anatomy.png"
+							class="tutorial-images"
+							id="anatomy-pic" />
+					</div>
+					<div>
+						<h4 style="margin-top: 0">Folder Structure of the Extension</h4>
+						<img src="./src/images/filestructure.png" />
+					</div>
+				</div>
+				<h4>Files Of Interest</h4>
+				<ul>
+					<li>
+						<p>
+							The <strong>img folder</strong> has the icon that appears in your
+							browser, the icon itself is called <em>icon48.png</em> and comes
+							from
+							<a
+								href="https://icons8.com/icon/68819/edit-image"
+								target="_blank">
+								Icons8
+							</a>
+							(which is a great resource, if you want a different icon). The
+							icon itself is 48 x 48 pixels. Technically, it's good practice to
+							have multiple sizes of your icon, but since this is just something
+							we're doing for fun, it's only got one size.
+						</p>
+						<p>
+							If you want the icon in your Bookmarks Toolbar to look different,
+							choose a different 48 x 48 picture and save it to the img folder
+							as ‘icon48.png’.
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>background.js </strong> runs in the background and creates
+							a badge if a comic updates today. This is where you'll add the RSS
+							Feed links of comics you want to follow - this is the
+							<strong>only</strong> file you have to edit to customize your
+							extension. This is also where you set what the badge's color and
+							contents, if you want to change that.
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>style.css</strong> is what styles your popup- this is
+							where you get to change the color, the font, the size of the font,
+							et cetera. I've left comments outlining what everything does.
+							Don't be afraid to experiment! If you really mess something up,
+							you can just start back over from the original styling.
+						</p>
+					</li>
+				</ul>
+				<p>
+					That's it! See, there really isn't too much to customize, and even
+					less if you just want to add your own favorite comics.
+				</p>
 				<h3>Wait, I'm Stil Confused About RSS Feeds!</h3>
 				<p>
 					RSS stands for Really Simply Syndication (or Rich Site Summary) and
@@ -183,21 +257,21 @@
 					An RSS feed is a simple text file written in a coding language called
 					XML. When you have a website with an RSS Feed, any changes to your
 					website are reflected in the RSS file immediately. An RSS Feed by
-					itself is just code, and can look really intimidating. Even if you’re
+					itself is just code and can look really intimidating. Even if you’re
 					familiar with code, it still isn’t the easiest thing to read. An RSS
-					Feed Reader takes the code, and turns it into something that’s easier
-					for a user to read.
+					Feed Reader takes the code and turns it into something that’s easier
+					to read.
 				</p>
 				<p>
 					With social media and email on the rise, RSS Feeds became less
 					popular. When I was in high school, I used an RSS Feed to keep track
-					of when manga I read updated (and when sites I liked to visit, liked
+					of when manga I read updated (and when sites I liked to visit, like
 					Cracked, published new articles). Now, I think most people rely solely
 					on social media and email newsletters to see when their favorite
 					websites update.
 				</p>
 				<p>
-					RSS feeds are unique, because there’s no middle-man. There’s no email
+					RSS feeds are unique because there’s no middle-man. There’s no email
 					server to set up or social media presence to manage for the website
 					owner, and on your end, you won’t find a newsletter in your spam or
 					miss a Tweet because it got “low engagement.” When the website
@@ -230,19 +304,26 @@
 				<p>
 					If you're worried about downloading something online, the extension is
 					hosted on Github, so all the files you download are visible on Github
-					before putting them on your computer. Feel free to look through the
-					code- because this is a <em>public</em> repository, people can leave
-					comments about the nature of what they've downloaded too.
+					before putting them on your computer. Feel free to click through and
+					see what each file has in it before downloading.
 				</p>
+				<p>
+					I only tested the extension on Firefox and Chrome, so the extension
+					may not work as intended on other browsers. If you use another browser
+					like Safari or Opera, you can google and follow steps to add your own
+					extension. Let me know how it works!
+				</p>
+				<p></p>
 				<h3>Editing and Installation Instructions</h3>
 				<ol>
 					<h4>Making Your First Edit</h4>
 					<li>
 						<p>
-							Find the file named 'background.js’ and right click the file, then
-							click ‘Open with’ and select your Text Editor of choice. All
-							images below show the code as viewed in Notepad. It should look
-							like this:
+							Find the 'background' folder and select the JavaScript file based
+							on the browser you use. So if you use Firefox, select Firefox.js.
+							Right click that file, then click ‘Open with’ and select your Text
+							Editor of choice. All images below show the code as viewed in
+							Notepad. It should look like this:
 						</p>
 						<img src="./src/images/notepad1.png" class="tutorial-images" />
 					</li>
@@ -269,6 +350,35 @@
 						<p>
 							Click save! You’ve officially customized your own RSS Feed reader!
 						</p>
+						<ul>
+							<li>
+								<p>
+									<strong>If you use Chrome</strong> this extension was built
+									with Mozilla Firefox in mind. So you still have two more
+									things to do before you can use the extension. It's just two
+									simple changes, and all you do is change the word 'mozilla' to
+									'chrome'.
+								</p>
+							</li>
+							<li>
+								<p>
+									In the <strong>manifest.json</strong> file, change line 9 so
+									that it reads
+									<code style="background-color: white">
+										"scripts": ["background/chrome.js"],
+									</code>
+								</p>
+							</li>
+							<li>
+								<p>
+									In the <strong>rss.html</strong> file, change line 13 so that
+									it says
+									<code style="background-color: white">
+										src="background/chrome.js"
+									</code>
+								</p>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<p>
@@ -276,52 +386,83 @@
 							saying you need to put some files into a ZIP folder so the browser
 							can read the extension correctly.
 						</p>
-						<p>To do this,</p>
-					</li>
-					<li>
-						<p>Another line about packaging?</p>
+						<p>Compress the following files:</p>
+						<ul>
+							<li>the background folder</li>
+							<li>the img folder</li>
+							<li>manifest.json</li>
+							<li>rss.html</li>
+							<li>script.js</li>
+							<li>style.css</li>
+						</ul>
+						<p>
+							(You want to compress everything but the License, the README, and
+							a .git folder if you have one.)
+						</p>
+						<p>
+							If you have a <strong>Windows</strong> computer, select those
+							files, right click and select
+							<strong> Send to > Compressed (zipped) folder</strong>. <br />
+							If you have a Mac, you'll select
+							<strong>Compress 6 items</strong>.
+						</p>
 					</li>
 					<h4>Installing Your Extension</h4>
 					<li>
 						<p>
 							Installing your extension has different steps depending on the
-							browser you use. The steps below are for Firefox, but you can
-							follow
-							<a
-								href="https://www.thesslstore.com/blog/install-a-chrome-extension/"
-								target="_blank">
-								these steps to download it on Chrome
-							</a>
+							browser you use, but it's fairly simple to do in both Firefox and
+							Chrome. The steps below are for Firefox, and the aside below is
+							for Chrome.
 						</p>
 						<ul>
 							<li>
 								<p>
-									I only tested the extension on Firefox and Chrome, so the
-									extension may not work as intended on other browsers. If you
-									use another browser like Safari or Opera, you can google and
-									follow steps to add your own extension. Let me know how it
-									works!
+									<strong>If you use Chrome</strong> as long as you made the
+									edits I specified in step 4, go to
+									<em>chrome://extensions/ </em> and drag the ZIP folder onto
+									the page. It should load automatically from there.
+								</p>
+							</li>
+							<li>
+								<p>
+									If you're a Chromer user you will see 2 errors upon uploading
+									your application. These errors will not affect the app's
+									functionality, and are around 1. the app being built for
+									Firefox and 2. the Manifest version I used for the json file.
 								</p>
 							</li>
 						</ul>
 					</li>
+					<h1 style="color: red">
+						Steps 7 and 8 may get removed if Mozilla signs my extension before
+						Webcomics day
+					</h1>
 					<li>
 						<p>
-							Select the WHAT FILE HUH WHAT from the folder- your browser uses
-							the location of the file, so if you move it, you’ll need to
-							re-install it.
+							In Firefox, go to <strong>about:config</strong> in your browser
+							and click 'Accept the Risk.' This will bring you to a page where
+							you can edit some important things for your browser. Only edit
+							what I mention, and be careful messing around here too much.
 						</p>
 					</li>
 					<li>
 						<p>
-							Click on the Menu button and then select ‘Extensions & Themes’ or
-							press CTRL + Shift + A
+							Search for <strong>xpinstall.signatures.required</strong> in the
+							search bar, and double click to make the preference 'false'.
+						</p>
+					</li>
+					<li>
+						<p>
+							Click on the Menu button next to your Bookmarks Toolbar and then
+							select ‘Extensions & Themes’ or press CTRL + Shift + A
 						</p>
 					</li>
 					<li>
 						<p>
 							Click the Gear Icon the the right of ‘Manage Your Extensions’ and
-							click ‘Install Add-on from file…’ from the menu
+							click ‘Install Add-on from file…’ from the menu. Then select the
+							ZIP folder you previously made.
 						</p>
 					</li>
 					<li>
@@ -339,19 +480,21 @@
 				</div>
 				<h3>Updating Your RSS Feed Reader</h3>
 				<p>
-					Well, you've done it! But maybe, you want the extension to be purple.
-					Or maybe you want to add a new podcast to your reader. (Did you know
-					podcasts also have RSS feeds you can track?) Well, open up the code
-					and make those changes! If you want to see the changes you make in
-					real time, follow the steps below in 'Seeing Your Edits.'
+					Well, you've done it! But maybe, you want the extension to be green
+					and the icon to be a big star instead of a painting. Or maybe you want
+					to add a new podcast to your reader. (Did you know podcasts also have
+					RSS feeds you can track?) Well, open up the code and make those
+					changes! If you want to see the changes you make in real time, follow
+					the steps below in 'Seeing Your Edits.'
 				</p>
 				<p>
 					For those who are less code savvy, I've added comments explaining what
-					lines of index.html and style.css you can edit easily, and what
-					they'll do. I wouldn’t recommend editing script.js- that file handles
-					creating the list of comics and their updates. If you want the badge
-					in your extension to be a different color, that's found in
-					background.js too.
+					lines of style.css you can edit easily, and what they'll do. Refer to
+					the
+					<a href="#anatomy">Anatomy of an Extension</a> section above as you
+					begin making your edits to understand what file does what. That
+					information is located in the project's README, so you can refer to
+					that too.
 				</p>
 				<h4>Seeing Your Edits</h4>
 				<p>
@@ -376,7 +519,7 @@
 				<p>
 					Updating your extension is going to follow the exact steps as the
 					installation instructions above. Once you've made your changes and
-					saved your files, make your ZIP folder (only zipping X, Y, Z) and
+					saved your files, make your ZIP folder (as explained in Step 5) and
 					upload to your browser!
 				</p>
 			</div>
@@ -413,13 +556,26 @@
 					than a table, or loading more than one update per webcomic. Go wild-
 					honestly- and then show me!
 				</p>
+				<h3>Manifest Version 2</h3>
+				<p>
+					I used a V2 manifest, which may have been a huge mistake. This is
+					mostly because I mainly developed the extension in Firefox, and then
+					realized Chrome is discontinuing V2. Right now, they aren’t allowing
+					new extensions in the Web Store that use V2, but you can still upload
+					them from a file. I’ll probably do some work to get the extension to
+					v3, but right now it’s not there. If you’re a Chrome user, I’ll tweet
+					and make an update when I switch everything to manifest version 3. But
+					for now… We’ll see. They have postponed the deprecation timelines, so
+					it seems like the current code will probably work for the rest of
+					2023, at least.
+				</p>
 				<h3>CORS</h3>
 				<p>
 					Ah, CORS. This was the first big hurdle when I was creating the RSS
 					Feed Reader. (For those who may not know: CORS stands for Cross Origin
 					Resource Sharing, and protects a website’s assets. This includes an
 					RSS feed. Some sites allow an external RSS Feed Reader to access the
-					RSS Feed, some don’t. All the webcomic RSS feeds I tried to access
+					RSS Feed, some don’t.) All the webcomic RSS feeds I tried to access
 					didn’t let me access them. Very irritating.
 				</p>
 				<p>
@@ -427,12 +583,11 @@
 					<a href="https://corsproxy.io/" target="_blank">corsproxy.io</a> It
 					fixes and resolves the CORS errors I was seeing, and is very easy to
 					implement in your own work. Honestly, I’m not 100% sure how it works
-					or who made it- clicking through the site, it appears to me from a
+					or who made it- clicking through the site, it appears to be from a
 					German company. But it works!
 				</p>
 			</div>
 		</content>
-		<script src="script.js"></script>
 	</body>
 	<!-- Why are you still here? Do you think Erik Phantom of the Opera liked Jules Verne books?-->
 	<!-- if you have an opinion on the matter, DM me. -->

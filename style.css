@@ -105,14 +105,23 @@ a:hover {
 content {
 	grid-area: content;
 	padding: 0em 2em;
+	padding-bottom: 50px;
 }
 
 p {
 	line-height: 24px;
 }
 
+.anatomy-div {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	gap: 50px;
+}
+
 .tutorial-images {
-	max-width: 600px;
+	max-width: 550px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -172,7 +181,8 @@ p {
 		font-size: 32px;
 	}
 	.tutorial-images {
-		max-width: 500px;
+		max-width: 60vw;
+		margin-left: -50px;
 	}
 }
 
@@ -219,6 +229,13 @@ p {
 		margin: 8px;
 	}
 	.tutorial-images {
-		max-width: 350px;
+		max-width: 80vw;
+		margin-left: -70px;
+	}
+	#anatomy-pic {
+		margin-left: -30px;
+	}
+	#you-did-it {
+		width: 225px;
 	}
 }
